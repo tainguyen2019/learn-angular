@@ -16,6 +16,7 @@ nav a{
     text-align: center;
     background-color: rgba(123,234,212,.3);
     transition: .3s;
+    padding: 1em;
 }
 
 .item:hover{

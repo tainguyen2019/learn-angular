@@ -1,0 +1,38 @@
+*{
+    outline: none;
+}
+form{
+    width: 100vw;
+    margin-left: 32px;
+    font-weight: bold;
+}
+
+input[name="title"]{
+    width: 80vw;
+    height: 32px;
+    padding: .5em;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    border-radius: 32px;
+}
+
+textarea{
+    width: 80vw;
+    padding: .5em;
+    margin-left: 32px;
+    border-radius: 32px;
+}
+
+button{
+    text-align: center;
+    margin: 32px 64px 64px;
+    width: 128px;
+    padding: .5em;
+    border-radius: 32px;
+    background-color: rgba(123,123,231,.1);
+}
+
+button:hover{
+    background-color: rgba(123,123,231,.9);
+}
+

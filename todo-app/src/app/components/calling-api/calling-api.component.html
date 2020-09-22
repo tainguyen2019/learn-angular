@@ -1,0 +1,23 @@
+<div class="post-container">
+  <table [border]="1">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Tittle</th>
+        <th>Body</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts">
+        <td>{{ post.id }}</td>
+        <td>{{ post.title }}</td>
+        <td>{{ post.body }}</td>
+        <td>
+          <button [routerLink]="['/call-api/edit-post', post.id]">Update</button>
+          <button (click)="deletePost(post.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

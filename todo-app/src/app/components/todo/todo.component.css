@@ -24,6 +24,7 @@ span > button{
     height: 2em;
     width: 64px;
     transition: .3s;
+    cursor: pointer;
 }
 
 button:hover{
@@ -51,6 +52,7 @@ button:hover{
     background-color: red;
     border-radius: 64px;
     float: right;
+    cursor: pointer;
 }
 
 

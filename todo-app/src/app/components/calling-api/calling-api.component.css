@@ -1,0 +1,46 @@
+*{
+  font-size: 1em;
+  outline: none;
+}
+.post-container {
+  background: rgba(168, 221, 241, 0.4);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 0.5em;
+}
+
+tr > td:nth-child(1) {
+  width: 5vw;
+  text-align: center;
+}
+
+tr > td:nth-child(2) {
+  width: 25vw;
+}
+
+tr > td:nth-child(3) {
+  width: 45vw;
+}
+
+tr > td:nth-child(4) {
+  width: 25vw;
+  text-align: center;
+}
+
+button {
+  margin-left: 8px;
+  padding: 0.5em;
+  width: 96px;
+  border-radius: 32px;
+  background: rgba(123, 213, 231, 0.3);
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(123, 213, 231, 0.9);
+}

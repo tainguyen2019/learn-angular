@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: rgb(193, 224, 172);
+}
+
+.form{
+    flex: 1;
+}
+
+input{
+    border-radius: 16px;
+    height: 1.5em;
+    width: 256px;
+    margin-right: 16px;
+    padding-left: 0.5em;
+}
+
+span > button{
+    border-radius: 16px;
+    height: 2em;
+    width: 64px;
+    transition: .3s;
+}
+
+button:hover{
+    background-color: rgb(193, 224, 172);
+}
+
+.list-todo{
+    flex:1;
+    border-radius: 16px;
+    padding: 2em;
+    margin-top: 16px;
+}
+
+.item{
+    background: rgb(93, 221, 151);
+    padding: 0.25em;
+    border-radius: 16px;
+    width: 256px;
+    height: 1.5em;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.list-todo button{
+    background-color: red;
+    border-radius: 64px;
+    float: right;
+}
+
+
+
+
+
+

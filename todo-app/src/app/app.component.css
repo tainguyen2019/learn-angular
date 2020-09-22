@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 32px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.item{
+    width: 20%;
+    border-radius: 32px;
+    text-align: center;
+    background-color: rgba(123,234,212,.3);
+    transition: .3s;
+}
+
+.item:hover{
+    background-color: rgba(123,234,212,.9);
+}

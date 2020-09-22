@@ -1,0 +1,7 @@
+<form #form="ngForm" (submit)="getValueForm(form)">
+    <h3>Form Example</h3>
+    <input type="number" name="id"  placeholder="Your ID" required ngModel><br>
+    <input type="text" name="name"  placeholder="Your Name" required ngModel><br>
+    <input type="number" name="age"  placeholder="Your Age" required ngModel><br>
+    <button type="submit">Submit</button>
+</form>

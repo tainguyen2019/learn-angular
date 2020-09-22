@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.list-heroes{
+    margin-top: 8px;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 8px;
+    list-style-type: none;
+}
+
+ul li{
+    padding: 1em 0;
+    background: rgba(123,123,123,.1);
+    border-radius: 32px;
+}
+
+ul li.selected, ul li:hover{
+    background-color: rgba(122, 189, 122, .9);
+}
+
+.hero-name{
+    margin-right: 32px;
+    padding: 1em;
+    border-radius: 32px;
+    background-color: rgba(122, 189, 122, .3);
+}

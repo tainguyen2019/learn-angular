@@ -1,0 +1,16 @@
+<div class="list-heroes">
+  <ul>
+    <li
+      *ngFor="let hero of heroes"
+      [class.selected]="hero === selectedHero"
+      (click)="onSelect(hero)"
+    >
+    <div class="hero">
+      <span class="hero-name">{{ hero.id }}</span>
+      <span>{{ hero.name }}</span>
+    </div>
+    </li>
+  </ul>
+</div>
+
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>

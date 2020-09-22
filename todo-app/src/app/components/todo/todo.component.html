@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="form">
+      <h1>Todo App</h1>
+      <span>
+        <input type="text" placeholder="Add todo" #todo/>
+        <button (click)="addTodo(todo)">Add</button>
+      </span>
+    </div>
+    <div class="list-todo">
+      <div class="item" *ngFor="let todo of todoArray">
+        {{todo}}
+        <button (click)="deleteTodo(todo)">X</button>
+      </div>
+    </div>
+  
+    <!-- Using ng-If
+    <div *ngIf="number<10; else falsy">OK</div>
+    <ng-template #falsy><p>Not OK</p></ng-template>
+    Using ng-Switch
+    <div [ngSwitch]="number">
+      <p *ngSwitchCase="1">Number 1</p>
+      <p *ngSwitchCase="2">Number 2</p>
+      <p *ngSwitchDefault>Number X</p>
+    </div> -->
+  </div>
+  

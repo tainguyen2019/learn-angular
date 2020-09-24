@@ -34,7 +34,10 @@ tr > td:nth-child(4) {
 
 button {
   margin-left: 8px;
+<<<<<<< HEAD
   margin-bottom: 8px;
+=======
+>>>>>>> cc0fc3fbf4ab418bed52b592faa904c738f363d5
   padding: 0.5em;
   width: 96px;
   border-radius: 32px;
@@ -44,4 +47,8 @@ button {
 
 button:hover {
   background: rgba(123, 213, 231, 0.9);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> cc0fc3fbf4ab418bed52b592faa904c738f363d5

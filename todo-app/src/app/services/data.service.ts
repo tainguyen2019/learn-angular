@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { stringify } from 'querystring';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -14,8 +15,8 @@ export class DataService {
   };
   constructor(private httpClient: HttpClient) {}
 
-  getPosts(): Observable<any> {
-    return this.httpClient.get(`${this.apiURL}/posts`);
+  getPosts(){
+    return this.httpClient.get(`${this.apiURL}/posts`).toPromise();
   }
 
   deletePost(id) {
@@ -32,6 +33,14 @@ export class DataService {
   updatePost(id, post): Observable<any> {
     return this.httpClient.put(
       `${this.apiURL}/posts/${id}`,
+      JSON.stringify(post),
+      this.httpOptions
+    );
+  }
+
+  createPost(post): Observable<any> {
+    return this.httpClient.post(
+      `${this.apiURL}/posts`,
       JSON.stringify(post),
       this.httpOptions
     );

@@ -6,11 +6,12 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { CommonModule} from '@angular/common';
-import { FormsModule, NgModel } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormComponent } from './components/form/form.component';
 import { CallingAPIComponent} from './components/calling-api/calling-api.component';
 import {HttpClientModule} from '@angular/common/http';
 import { EditPostComponent } from './components/edit-post/edit-post.component';
+import { AddPostComponent } from './components/add-post/add-post.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,15 +21,17 @@ import { EditPostComponent } from './components/edit-post/edit-post.component';
     FormComponent,
     CallingAPIComponent,
     EditPostComponent,
+    AddPostComponent,
   ],
   imports: [
     CommonModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

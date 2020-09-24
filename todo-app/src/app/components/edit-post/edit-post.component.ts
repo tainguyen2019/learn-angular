@@ -20,14 +20,16 @@ export class EditPostComponent implements OnInit {
     this.id = this.route.snapshot.params.id;
     this.postService.getPost(this.id)
     .subscribe(data => {
-      console.log(data);
+      // console.log(data);
       this.post = data;
     });
   }
 
   submitForm(form){
-    let post = {...form.value, id: this.id};
-    this.postService.updatePost(this.id, post)
+    // let post = {...form.value, id: this.id};
+    // console.log(post);
+    // console.log(this.post);
+    this.postService.updatePost(this.id, this.post)
     .subscribe(result =>{
       console.log('Post updated successfully!');
       this.router.navigateByUrl('call-api');

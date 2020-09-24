@@ -6,15 +6,15 @@ import { Component, OnChanges, OnInit } from '@angular/core';
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css'],
 })
-export class TodoComponent implements OnInit, OnChanges{
+export class TodoComponent implements OnInit, OnChanges {
   todoArray = ['Java', 'Angular'];
   number = 9;
 
-  ngOnInit(){
+  ngOnInit() {
     console.log('On Init');
   }
 
-  ngOnChanges(){
+  ngOnChanges() {
     console.log('On Changes');
   }
 

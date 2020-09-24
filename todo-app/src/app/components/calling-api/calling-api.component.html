@@ -1,4 +1,5 @@
-<div class="post-container">
+<div class="post-container" *ngIf="!error;else hasError">
+  <button [routerLink]="['/call-api/add-post']">New post</button>
   <table [border]="1">
     <thead>
       <tr>
@@ -21,3 +22,8 @@
     </tbody>
   </table>
 </div>
+
+<ng-template #hasError>Oops! Something went wrong.</ng-template>
+
+
+

@@ -1,0 +1,26 @@
+<form (ngSubmit)="submitForm()" [formGroup]="form">
+  <h3>Form Update</h3>
+  Title
+  <input type="text" name="title" formControlName="title" /><br />
+  <div *ngIf="submitted && f.title.errors">
+    <div class="error">Title is required</div>
+  </div>
+  <label for="body">Body</label>
+  <textarea id="body" rows="10" name="body" formControlName="body"></textarea>
+  <br />
+  <div *ngIf="submitted && f.body.errors">
+    <div class="error">Body is required</div>
+  </div>
+
+  <pre>Test custom Validation</pre>
+  <br>
+  <input name="year" formControlName="year">
+  <div *ngIf="submitted && f.year.errors">
+    <div class="error">Year is invalid</div>
+  </div>
+  <br>
+
+  <span>
+    <button type="submit">Add</button>
+  </span>
+</form>

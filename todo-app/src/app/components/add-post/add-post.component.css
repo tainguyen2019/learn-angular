@@ -36,4 +36,8 @@ button:hover{
     background-color: rgba(123,123,231,.9);
 }
 
-
+.error{
+    color: red;
+    padding: 1em 0;
+    margin-bottom: 32px;
+}

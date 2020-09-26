@@ -1,9 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-<<<<<<< HEAD
-import { stringify } from 'querystring';
-=======
->>>>>>> cc0fc3fbf4ab418bed52b592faa904c738f363d5
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -18,13 +14,8 @@ export class DataService {
   };
   constructor(private httpClient: HttpClient) {}
 
-<<<<<<< HEAD
-  getPosts(){
+  getPosts() {
     return this.httpClient.get(`${this.apiURL}/posts`).toPromise();
-=======
-  getPosts(): Observable<any> {
-    return this.httpClient.get(`${this.apiURL}/posts`);
->>>>>>> cc0fc3fbf4ab418bed52b592faa904c738f363d5
   }
 
   deletePost(id) {
@@ -45,15 +36,4 @@ export class DataService {
       this.httpOptions
     );
   }
-<<<<<<< HEAD
-
-  createPost(post): Observable<any> {
-    return this.httpClient.post(
-      `${this.apiURL}/posts`,
-      JSON.stringify(post),
-      this.httpOptions
-    );
-  }
-=======
->>>>>>> cc0fc3fbf4ab418bed52b592faa904c738f363d5
 }

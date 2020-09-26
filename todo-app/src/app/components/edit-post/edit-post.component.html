@@ -1,16 +1,7 @@
-<<<<<<< HEAD
-<form *ngIf="post" (ngSubmit)="submitForm(form)">
-=======
 <form *ngIf="post" #form="ngForm" (ngSubmit)="submitForm(form)">
->>>>>>> cc0fc3fbf4ab418bed52b592faa904c738f363d5
   <h3>Form Update</h3>
   Title
-  <input
-    type="text"
-    [(ngModel)]="post.title"
-    name="title"
-    [value]="post.title"
-  /><br />
+  <input type="text" [(ngModel)]="post.title" name="title" [value]="post.title" /><br />
   <label for="body">Body</label>
   <textarea id="body" [(ngModel)]="post.body" rows="10" name="body">{{ post.body }}</textarea>
   <br>

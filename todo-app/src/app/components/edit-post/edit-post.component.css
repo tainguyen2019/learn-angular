@@ -1,13 +1,14 @@
-*{
+* {
     outline: none;
 }
-form{
+
+form {
     width: 100vw;
     margin-left: 32px;
     font-weight: bold;
 }
 
-input[name="title"]{
+input[name="title"] {
     width: 80vw;
     height: 32px;
     padding: .5em;
@@ -16,27 +17,22 @@ input[name="title"]{
     border-radius: 32px;
 }
 
-textarea{
+textarea {
     width: 80vw;
     padding: .5em;
     margin-left: 32px;
     border-radius: 32px;
 }
 
-button{
+button {
     text-align: center;
     margin: 32px 64px 64px;
     width: 128px;
     padding: .5em;
     border-radius: 32px;
-    background-color: rgba(123,123,231,.1);
+    background-color: rgba(123, 123, 231, .1);
 }
 
-button:hover{
-    background-color: rgba(123,123,231,.9);
+button:hover {
+    background-color: rgba(123, 123, 231, .9);
 }
-
-<<<<<<< HEAD
-
-=======
->>>>>>> cc0fc3fbf4ab418bed52b592faa904c738f363d5

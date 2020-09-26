@@ -36,4 +36,12 @@ export class DataService {
       this.httpOptions
     );
   }
+
+  createPost(post): Observable<any> {
+    return this.httpClient.post(
+      `${this.apiURL}/posts`,
+      JSON.stringify(post),
+      this.httpOptions
+    );
+  }
 }

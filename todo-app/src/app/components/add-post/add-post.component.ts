@@ -6,8 +6,8 @@ import {
   Validators,
 } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DataService } from 'src/app/services/data.service';
-import {yearValidation} from './customvalidation';
+import { DataService } from '../../services/data.service';
+import { yearValidation } from './customvalidation';
 
 @Component({
   selector: 'app-add-post',

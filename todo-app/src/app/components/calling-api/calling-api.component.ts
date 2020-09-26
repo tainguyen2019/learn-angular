@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
-import { Post } from '../../post';
 @Component({
   selector: 'app-calling-api',
   templateUrl: './calling-api.component.html',

@@ -19,6 +19,6 @@ nav a{
     padding: 1em;
 }
 
-.item:hover{
+.item:hover, .active{
     background-color: rgba(123,234,212,.9);
 }

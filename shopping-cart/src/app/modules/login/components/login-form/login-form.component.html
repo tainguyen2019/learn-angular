@@ -1,0 +1,15 @@
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="submitForm()">
+    <label for="username">Username: </label>
+    <input type="text" name="username" id="username" formControlName="username"/><br />
+    <div *ngIf="submitted && f.username.errors">
+        <div>Username is required</div>
+    </div>
+    <label for="password">Password:  </label>
+    <input type="password" name="password" id="password" formControlName="password"/><br>
+    <div *ngIf="submitted && f.password.errors">
+        <div>Password is required</div>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>

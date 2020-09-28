@@ -21,7 +21,7 @@ export class CallingAPIComponent implements OnInit {
     // );
     this.dataService
       .getPosts()
-      .then((result) => (this.posts = result))
+      .then((result) => (this.posts = (result as Array<any>).reverse()))
       .catch((error) => {
         console.log('Oops! Something went wrong');
         this.error = true;

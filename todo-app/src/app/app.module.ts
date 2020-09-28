@@ -12,6 +12,7 @@ import { CallingAPIComponent } from './components/calling-api/calling-api.compon
 import { HttpClientModule } from '@angular/common/http';
 import { EditPostComponent } from './components/edit-post/edit-post.component';
 import { AddPostComponent } from './components/add-post/add-post.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AddPostComponent } from './components/add-post/add-post.component';
     CallingAPIComponent,
     EditPostComponent,
     AddPostComponent,
+    HighlightDirective,
   ],
   imports: [
     CommonModule,

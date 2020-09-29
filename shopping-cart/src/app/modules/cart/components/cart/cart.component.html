@@ -1,0 +1,13 @@
+<div class="cart">
+  <div class="item" *ngFor="let item of cart">
+    <img
+      src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+    />
+    <div class="product">
+      <p>Product: {{ item.productid }}</p>
+      <p>Quanity: {{ item.quantity }}</p>
+    </div>
+    <button (click)="removeItem(item)">Remove</button>
+  </div>
+</div>
+<div *ngIf="empty">Your cart is empty!</div>

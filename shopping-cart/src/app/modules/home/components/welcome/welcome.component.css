@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p{
+    width: 100%;
+    background-color: rgb(153, 212, 162);
+    padding: 1em;
+    margin-bottom: 32px;
+    font-weight: bolder;
+
+}
+
+div{
+    width: 128px;
+    padding: 1em;
+    margin: 16px;
+    text-align: center ;
+    background: white;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+div:hover{
+  background-color: rgb(150, 114, 247);
+}

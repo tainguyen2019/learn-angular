@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+  display: flex;
+  background: white;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 8px;
+  height: 96px;
+}
+
+img {
+  width: 96px;
+  height: auto;
+  padding: 0.25em;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.container > div{
+    text-align: center;
+    flex: 1;
+}
+
+input{
+    flex: 3;
+    height: 48px;
+    padding: 4px;
+}
+
+button{
+    height: 48px;
+    flex: 1;
+    border:1px solid rgb(150, 114, 247, .9);
+    background: rgb(150, 114, 247, .3);
+    cursor: pointer;
+}
+
+button:hover{
+    background: rgb(150, 114, 247, .9);
+}

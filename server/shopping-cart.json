@@ -1,0 +1,53 @@
+{
+  "product-list": [
+    {
+      "id": 1,
+      "name": "IPhone6",
+      "price": 600,
+      "description": "Here is description"
+    },
+    {
+      "id": 2,
+      "name": "IPhone7",
+      "price": 700,
+      "description": "Here is description"
+    },
+    {
+      "id": 3,
+      "name": "IPhone8",
+      "price": 800,
+      "description": "Here is description"
+    },
+    {
+      "id": 4,
+      "name": "IPhone9",
+      "price": 900,
+      "description": "Here is description"
+    },
+    {
+      "id": 5,
+      "name": "IPhoneX",
+      "price": 1000,
+      "description": "Here is description"
+    },
+    {
+      "id": 6,
+      "name": "IPhoneXI",
+      "price": 1100,
+      "description": "Here is description"
+    }
+  ],
+  "cart": [
+    {
+      "productid": 2,
+      "quantity": 1,
+      "id": 1
+    }
+  ],
+  "discount": {
+    "value": 0
+  },
+  "total": {
+    "value": 0
+  }
+}

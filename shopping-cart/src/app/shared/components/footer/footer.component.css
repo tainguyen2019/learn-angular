@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 64px;
+  padding: 1em;
+  background: white;
+}
+
+.control,
+.customer-service {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.25em;
+}
+
+a:hover {
+  text-decoration: underline;
+}

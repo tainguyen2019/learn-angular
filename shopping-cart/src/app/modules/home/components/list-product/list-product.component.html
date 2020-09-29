@@ -1,0 +1,11 @@
+<div class="list-product">
+  <div class="product" *ngFor="let product of products">
+    <p class="name">{{ product.name }}</p>
+    <img
+      src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+    />
+    <p class="price">Price: ${{ product.price }}</p>
+    <p class="description">{{ product.description }}</p>
+    <button class="add-to-cart" (click)="addToCart(product)">Add to cart</button>
+  </div>
+</div>

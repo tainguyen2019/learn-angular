@@ -1,0 +1,36 @@
+.cart{
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    margin-bottom: 16px;
+    padding: 1em;
+}
+
+img{
+    width: 96px;
+    height: auto;
+}
+
+.product{
+    justify-self: flex-end;
+}
+
+button{
+    align-self: center;
+    height: 32px;
+    width: 64px;
+    border:1px solid rgb(150, 114, 247, .9);
+    background: rgb(150, 114, 247, .3);
+    cursor: pointer;
+}
+
+
+button:hover{
+    background: rgb(150, 114, 247, .9);
+}

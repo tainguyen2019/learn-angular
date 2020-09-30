@@ -1,0 +1,9 @@
+<div class="root">
+  <div class="childrenWrapper" [class.loading]="loading">
+    <!-- Children -->
+    <ng-content></ng-content>
+  </div>
+  <div class="progressWrapper" [class.loading]="loading">
+    <div class="loader"></div>
+  </div>
+</div>

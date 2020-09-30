@@ -1,0 +1,14 @@
+.robo-filter {
+  margin: 2rem 0;
+}
+
+.robo-filter label {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-right: 0.5rem;
+}
+
+.robo-filter input {
+  padding: 0.5rem;
+  width: 15rem;
+}

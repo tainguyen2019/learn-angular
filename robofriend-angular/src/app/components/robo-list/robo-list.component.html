@@ -1,3 +1,7 @@
+<div *ngIf="robos.length === 0">No robos found.</div>
 <div class="robo-list">
-  <app-robo *ngFor="let robo of robos; trackBy: trackById" [robo]="robo"></app-robo>
+  <app-robo
+    *ngFor="let robo of robos; trackBy: trackById"
+    [robo]="robo"
+  ></app-robo>
 </div>

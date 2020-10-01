@@ -1,0 +1,41 @@
+.root {
+  position: relative;
+}
+
+.childrenWrapper.loading {
+  opacity: 0.5;
+}
+
+.progressWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.progressWrapper.loading {
+  display: flex;
+}
+
+.loader {
+  border: 3px solid #cfd2d4;
+  border-radius: 50%;
+  border-top: 3px solid red;
+  width: 64px;
+  height: 64px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}

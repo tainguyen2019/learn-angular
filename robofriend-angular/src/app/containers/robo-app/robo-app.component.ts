@@ -9,17 +9,30 @@ import { RoboService, User } from 'src/app/services/robo.service';
 export class RoboAppComponent implements OnInit {
   robos: User[];
   filteredRobos: User[];
+  loading: boolean;
 
-  constructor(private roboService: RoboService) {}
+  constructor(private roboService: RoboService) {
+    this.loading = false;
+  }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.fetchRobos();
+  }
+
+  fetchRobos() {
+    this.loading = true;
+
     this.roboService
       .getList()
       .then((users) => {
         this.robos = users;
         this.filteredRobos = users;
       })
-      .catch(console.error);
+      .catch(console.error)
+      .finally(() => {
+        this.loading = false;
+      });
+
   }
 
   searchEvent(search: string) {

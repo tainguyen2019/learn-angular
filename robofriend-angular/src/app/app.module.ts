@@ -10,6 +10,7 @@ import { RoboListComponent } from './components/robo-list/robo-list.component';
 import { RoboComponent } from './components/robo/robo.component';
 import { RoboFilterComponent } from './components/robo-filter/robo-filter.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SpinComponent } from './components/spin/spin.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     RoboListComponent,
     RoboComponent,
     RoboFilterComponent,
+    SpinComponent,
   ],
   imports: [
     BrowserModule,

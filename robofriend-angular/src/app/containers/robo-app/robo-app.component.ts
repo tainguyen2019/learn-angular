@@ -21,6 +21,7 @@ export class RoboAppComponent implements OnInit {
 
   fetchRobos() {
     this.loading = true;
+
     this.roboService
       .getList()
       .then((users) => {
@@ -31,6 +32,7 @@ export class RoboAppComponent implements OnInit {
       .finally(() => {
         this.loading = false;
       });
+
   }
 
   searchEvent(search: string) {

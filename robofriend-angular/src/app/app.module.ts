@@ -11,6 +11,8 @@ import { RoboComponent } from './components/robo/robo.component';
 import { RoboFilterComponent } from './components/robo-filter/robo-filter.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SpinComponent } from './components/spin/spin.component';
+import { RefreshButtonComponent } from './components/refresh-button/refresh-button.component';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { SpinComponent } from './components/spin/spin.component';
     RoboComponent,
     RoboFilterComponent,
     SpinComponent,
+    RefreshButtonComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,13 @@
 import {
   Component,
   EventEmitter,
+  Input,
+  OnChanges,
   OnDestroy,
   OnInit,
   Output,
+  SimpleChanges,
+
 } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Subscription } from 'rxjs';
@@ -15,21 +19,24 @@ import { distinctUntilChanged, debounceTime } from 'rxjs/operators';
   templateUrl: './robo-filter.component.html',
   styleUrls: ['./robo-filter.component.css'],
 })
-export class RoboFilterComponent implements OnInit, OnDestroy {
-
+export class RoboFilterComponent implements OnInit, OnDestroy, OnChanges {
   searchForm: FormGroup;
+
+  @Input()
+  search: string;
+
 
   @Output()
   searchEvent = new EventEmitter<string>();
 
   searchSubscription: Subscription;
 
-
   constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit() {
     this.searchForm = this.formBuilder.group({
-      search: '',
+      search: this.search,
+
     });
 
     this.searchSubscription = this.searchForm.valueChanges
@@ -41,5 +48,14 @@ export class RoboFilterComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.searchSubscription.unsubscribe();
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    const { currentValue, firstChange } = changes.search;
+    if (!firstChange && currentValue !== this.searchForm.value.search) {
+      this.searchForm.setValue({
+        search: currentValue,
+      });
+    }
   }
 }

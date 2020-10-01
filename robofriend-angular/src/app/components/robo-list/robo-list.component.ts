@@ -26,7 +26,6 @@ export class RoboListComponent implements OnInit, OnDestroy {
     this.clickSubscription.unsubscribe();
   }
 
-
   trackById(_: number, item: User): number {
     return item.id;
   }

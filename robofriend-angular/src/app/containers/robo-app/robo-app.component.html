@@ -3,9 +3,12 @@
     <a rel="noopener" routerLink="/home" routerLinkActive="active">
       <span>Back home</span>
     </a>
-
     <h1>RoboFriends</h1>
-    <app-robo-filter (searchEvent)="searchEvent($event)"></app-robo-filter>
+    <app-robo-filter
+      [search]="search"
+      (searchEvent)="searchEvent($event)"
+    ></app-robo-filter>
+    <app-refresh-button (refreshEvent)="refreshEvent()"></app-refresh-button>
     <app-robo-list [robos]="filteredRobos"></app-robo-list>
   </div>
 </app-spin>

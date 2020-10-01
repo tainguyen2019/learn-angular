@@ -45,7 +45,6 @@ export class RoboAppComponent implements OnInit, OnDestroy {
       name.match(new RegExp(search, 'gi'))
     );
   }
-
   refreshEvent() {
     this.search = '';
     this.fetchRobos();

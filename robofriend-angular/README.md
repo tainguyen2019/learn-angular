@@ -3,7 +3,6 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
 
 ## TODO
-
 - [x] Getting started with Observable to subscribe new changes
 - [x] Implement filter form
 - [x] [Configure TSLint, Husky, Prettier](https://www.daptontechnologies.com/angular-prettier-husky/)

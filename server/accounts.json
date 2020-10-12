@@ -1,0 +1,6 @@
+{
+  "accounts":[
+    {"id": 1, "username": "TaiNguyen", "password":"1", "role":"user"},
+    {"id": 2, "username": "Admin", "password":"1", "role":"admin"}
+  ]
+}

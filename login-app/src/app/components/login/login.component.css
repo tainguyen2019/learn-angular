@@ -1,0 +1,27 @@
+*{
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    padding: .25em;
+    margin: 8px;
+}
+
+button{
+    margin: 16px;
+    width: 96px;
+    padding: .25em;
+    border: none;
+    background: rgba(114, 240, 229, 0.3);
+}
+
+button:hover{
+    background: rgba(114, 240, 229, 0.9);
+}
